@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Звукосховище</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+    .site-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    input {
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .song {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .song-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    audio {
+      width: 100%;
+    }
+    .download {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .suggest-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.suggest-form input[type="text"] {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.suggest-form button {
+  padding: 8px 14px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.suggest-form button:hover {
+  background-color: #218838;
+}
+#success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<div class="suggest-form">
+  <form id="songForm" action="https://formsubmit.co/kostiantinruban2013@gmail.com" method="POST">
+    <label for="suggest">Запропонувати пісню:</label><br>
+    <input type="text" name="song" id="suggest" placeholder="Введіть назву пісні..." required>
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Надіслати</button>
+  </form>
+  <div id="success-message" style="display: none;">✅ Повідомлення надіслано!</div>
+</div>
+
+<div class="site-title">Звукосховище</div>
+<div class="subtitle">Слухай та завантажуй улюблені треки</div>
+
+<input type="text" id="search" placeholder="Введіть назву пісні...">
+
+<div id="song-list">
+
+  <div class="song">
+    <div class="song-title">Виктор Цой - Группа крови</div>
+    <audio controls>
+      <source src="Виктор Цой - Группа крови.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Виктор Цой - Группа крови.mp3" download>⬇️ Завантажити</a>
+  </div>
+
+  <div class="song">
+    <div class="song-title">Kalush — Стефанія</div>
+    <audio controls>
+      <source src="KALUSH - Stefania (KALUSH Orchestra) (Евровидение 2022 Украина).mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="KALUSH - Stefania (KALUSH Orchestra) (Евровидение 2022 Украина).mp3" download>⬇️ Завантажити</a>
+  </div>
+
+  <div class="song">
+    <div class="song-title">Wellboy — Гуси</div>
+    <audio controls>
+      <source src="Wellboy - Гуси.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="music/wellboy_gusy.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Skofka - Чути гімн</div>
+    <audio controls>
+      <source src="Skofka - Чути гімн.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Skofka - Чути гімн.mp3" download>⬇️ Завантажити</a>
+  </div>
+    <div class="song">
+    <div class="song-title">Виктор Цой - Хочу перемен</div>
+    <audio controls>
+      <source src="Виктор Цой - Хочу перемен.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Виктор Цой - Хочу перемен.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Виктор Цой - Звезда по имени Солнце</div>
+    <audio controls>
+      <source src="Виктор Цой - Звезда по имени Солнце.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Виктор Цой - Звезда по имени Солнце.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Wellboy - Вишні</div>
+    <audio controls>
+      <source src="Wellboy - Вишнi.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Wellboy - Вишнi.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Антиліта - Бери своє</div>
+    <audio controls>
+      <source src="Антитіла - Бери своє.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Антитіла - Бери своє.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Арсен Мірзоян - Моя країна</div>
+    <audio controls>
+      <source src="Арсен Мірзоян - Моя Країна.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Арсен Мірзоян - Моя Країна.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">DOROFEEVA - Щоб не було</div>
+    <audio controls>
+      <source src="DOROFEEVA - Щоб Не Було.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="DOROFEEVA - Щоб Не Було.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">DOROFEEVA & POSITIFF - Смак-печаль</div>
+    <audio controls>
+      <source src="DOROFEEVA & POSITIFF - Смак-печаль.mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="DOROFEEVA & POSITIFF - Смак-печаль.mp3" download>⬇️ Завантажити</a>
+  </div>
+  <div class="song">
+    <div class="song-title">Тіна Кароль Голос діти - Дитинство не втрачай</div>
+    <audio controls>
+      <source src="Тна Кароль Голос Дти - Дитинство не втрачай (musua.org).mp3" type="audio/mpeg">
+
+    </audio>
+    <br>
+    <a class="download" href="Тна Кароль Голос Дти - Дитинство не втрачай (musua.org).mp3" download>⬇️ Завантажити</a>
+  </div>
+</div>
+
+<script>
+  const input = document.getElementById('search');
+  const songs = document.querySelectorAll('.song');
+
+  input.addEventListener('input', () => {
+    const query = input.value.toLowerCase();
+    songs.forEach(song => {
+      const title = song.querySelector('.song-title').textContent.toLowerCase();
+      song.style.display = title.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
+<script>
+document.getElementById("songForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // не перезавантажує сторінку
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      document.getElementById("success-message").style.display = "block";
+      form.reset();
+    } else {
+      alert("❌ Помилка при надсиланні.");
+    }
+  }).catch(error => {
+    alert("❌ Сервер недоступний.");
+  });
+});
+</script>
+
+
+</body>
+</html>
